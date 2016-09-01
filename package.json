@@ -1,0 +1,46 @@
+{
+  "name": "pack-basic",
+  "version": "1.0.0",
+  "description": "Basic webpack setup",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server -d --inline --progress --no-info --config webpack.config.js --host 0.0.0.0",
+    "postinstall": "typings install",
+    "typings": "typings"
+  },
+  "author": "snakierten96",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "^2.0.0-rc.5",
+    "@angular/compiler": "^2.0.0-rc.5",
+    "@angular/core": "^2.0.0-rc.5",
+    "@angular/http": "^2.0.0-rc.5",
+    "@angular/platform-browser": "^2.0.0-rc.5",
+    "@angular/platform-browser-dynamic": "^2.0.0-rc.5",
+    "core-js": "^2.3.0",
+    "ng2-redux": "^3.3.9",
+    "redux": "^3.5.2",
+    "redux-localstorage": "^0.4.1",
+    "redux-logger": "^2.6.1",
+    "reflect-metadata": "0.1.3",
+    "rxjs": "5.0.0-beta.6",
+    "zone.js": "^0.6.17"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^1.0.0",
+    "babel-core": "^6.14.0",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.14.0",
+    "copy-webpack-plugin": "^3.0.1",
+    "cross-env": "^2.0.1",
+    "html-webpack-plugin": "^2.22.0",
+    "inline-source-map": "^0.6.2",
+    "node-libs-browser": "^1.0.0",
+    "raw-loader": "^0.5.1",
+    "typescript": "^1.8.10",
+    "typings": "^1.0.4",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.0",
+    "webpack-split-by-path": "0.0.10"
+  }
+}
