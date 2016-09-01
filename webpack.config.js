@@ -7,15 +7,15 @@ const loaders = require('./webpack/loaders');
 
 module.exports = {
   devtool: 'inline-source-map',
-  entry: [
-    './src/vendor.ts',
-    './src/index.ts'
-  ],
+  entry: {
+    'vendor': './src/vendor.ts',
+    'app': './src/index.ts'
+  },
   output: {
     path: path.join(__dirname, 'dist'),
     //filename: 'bundle.js',
-    filename: "[name]-[chunkhash].js",
-    chunkFilename: "[name]-[chunkhash].js",
+    filename: "[name]-[hash].js",
+    chunkFilename: "[id]-[hash]-chunk.js",
     publicPath: '/'
   },
   plugins: plugins,
